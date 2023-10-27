@@ -1,0 +1,280 @@
+// MOBILE DESIGN //
+
+
+@media screen and (max-width:727px) {
+
+    .kinds-of-activities {
+        background-color: var(--leight-grey-color);
+        position: relative;
+        z-index: 1;
+        padding: 30pt 0;
+    }
+    
+    .green-background {
+        background-color: var(--leight-grey-color);
+        height: 200px; 
+        margin: -100pt 0 -90pt 0;
+    }
+    
+    .activities-list {
+        font-size: $h2-font-size;
+        font-family: 'Zen Loop', cursive; 
+        text-align: center;
+        color: white;
+    
+        .activity-item { 
+            margin: 90pt auto;
+            width: 100%;
+            position: relative; 
+
+            &:not(:last-child) {
+                margin-bottom: 50pt;
+            } 
+        }
+
+        .activity-title-containter {
+            width: 90%; 
+            border-radius: 66pt 0 66pt 0;
+            margin: 0 auto 74pt;
+            background-color: var(--beige-color);
+            padding: 26pt;
+            position: absolute;
+            top: -10%;
+            left: 5%;
+    
+            .activity-title  {
+            font-size: 30pt; 
+            }
+        }
+    
+        .activity-image {
+            width: 100%;
+        }
+    
+        .activity-overlay {
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 98%;
+            height: 95%; 
+            background: rgba(0, 0, 0, 0.5); 
+          }
+    
+    
+        .read-more {
+        margin: auto;
+        text-align: center;
+        font-family: 'Zen Loop', cursive; 
+        width: 245px;
+        color: var(--white-color);
+        font-size: 40px;
+        text-align: center;
+        border-radius: 66pt 0 66pt 0;
+        display: block;
+        padding: 10pt;
+        background-color: var( --light-green-color);
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        
+    
+        &:hover {
+          background-color: var(--beige-color);
+          color: var(--leight-grey-color);
+        }
+        }
+    }
+    }
+
+
+    // TABLET DESIGN //
+    
+    @media screen and (min-width:728px) and (max-width: 1023px) {
+
+        .kinds-of-activities {
+        background-color: var(--leight-grey-color);
+        position: relative;
+        z-index: 1;
+        padding: 140pt 0 15pt;
+    }
+    
+    .green-background {
+        background-color: var(--leight-grey-color);
+        height: 200px; 
+        margin: -100pt 0 -90pt 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .activities-list {
+        font-size: 20pt;
+        font-family: 'Zen Loop', cursive; 
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+    
+        .activity-item {
+            margin: 0 auto;
+            width: calc(45% - 30px); 
+            position: relative;
+            box-sizing: border-box; 
+            padding: 5px; 
+            
+            &:not(:last-child) {
+                margin-bottom: 50pt;
+            } 
+        }
+    
+        .activity-title-containter {
+            width: 90%;
+            border-radius: 66pt 0 66pt 0;
+            margin: 0 auto 74pt;
+            background-color: var(--beige-color);
+            padding: 26pt;
+            position: absolute;  
+            top: -10%;
+            left: 5%;
+    
+          .activity-title {
+            font-size: 30pt;
+          } 
+    
+        }
+    
+        .activity-image {
+            width: 100%;
+            height: 200px;
+        }
+    
+    
+        .activity-overlay {
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 98%;
+            height: 95%;
+            background: rgba(0, 0, 0, 0.5); 
+          }
+    
+        .read-more {
+        margin: auto;
+        text-align: center;
+        font-family: 'Zen Loop', cursive; 
+        width: 150px;
+        color: var(--white-color);
+        font-size: 20pt;
+        text-align: center;
+        border-radius: 66pt 0 66pt 0;
+        display: block;
+        padding: 20pt;
+        background-color: var( --light-green-color);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    
+        &:hover {
+          background-color: var(--beige-color);
+          color: var(--leight-grey-color);
+        }
+        }
+    }  
+    }
+    
+    // DESCTOP DESIGN //
+
+    @media screen and (min-width:1024px) {
+        .kinds-of-activities {
+        background-color: var(--leight-grey-color);
+        position: relative;
+        z-index: 1;
+        padding: 140pt 0 15pt;
+    }
+    
+    .green-background {
+        background-color: var(--leight-grey-color);
+        height: 200px; 
+        margin: -100pt 0 -90pt 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .activities-list {
+        font-size: 20pt;
+        font-family: 'Zen Loop', cursive; 
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+    
+        .activity-item {
+            margin: 0 auto;
+            width: calc(33% - 30px); 
+            position: relative;
+            box-sizing: border-box; 
+            padding: 5px; 
+            
+            &:not(:last-child) {
+                margin-bottom: 50pt;
+            } 
+        }
+    
+        .activity-title-containter {
+            width: 90%;
+            border-radius: 66pt 0 66pt 0;
+            margin: 0 auto 74pt;
+            background-color: var(--beige-color);
+            padding: 26pt;
+            position: absolute;  
+            top: -10%;
+            left: 5%;
+    
+          .activity-title {
+            font-size: 60pt;
+          } 
+    
+        }
+    
+        .activity-image {
+            width: 100%;
+            height: 300px;
+        }
+    
+    
+        .activity-overlay {
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            width: 98%;
+            height: 95%;
+            background: rgba(0, 0, 0, 0.5); 
+          }
+    
+        .read-more {
+        margin: auto;
+        text-align: center;
+        font-family: 'Zen Loop', cursive; 
+        width: 150px;
+        color: var(--white-color);
+        font-size: 20pt;
+        text-align: center;
+        border-radius: 66pt 0 66pt 0;
+        display: block;
+        padding: 20pt;
+        background-color: var( --light-green-color);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    
+        &:hover {
+          background-color: var(--beige-color);
+          color: var(--leight-grey-color);
+        }
+        }
+    }  
+    }
+    

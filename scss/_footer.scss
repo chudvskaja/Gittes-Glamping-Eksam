@@ -1,0 +1,50 @@
+footer {
+    background-color: var(--footer-color); 
+    padding: 76pt 30pt; 
+
+
+    .footer-social-links { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10pt;
+        margin-bottom: 40pt;
+
+       
+
+        .fa-square-facebook {    
+            color: var(--white-color);
+            font-size: 39pt;
+        }
+
+        .fa-instagram {
+            color: var(--green-color);
+            background-color: white;
+            width: 34pt;
+            height: 34pt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30pt; 
+            border-radius: 4pt;
+        }
+
+        .fa-square-facebook:hover, .fa-instagram:hover {
+            color: var(--black-color);
+        } 
+
+        
+    }
+
+    .footer-tekst {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10pt;
+
+        .footer-name {
+            font-family: 'Zen Loop', cursive;
+            font-size: 30pt;
+        }
+    }
+} 

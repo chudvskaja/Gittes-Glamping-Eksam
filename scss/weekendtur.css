@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  overflow-anchor: none;
+  margin: 0 30px;
+}
+body a {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+body ul, body li {
+  list-style: none;
+}
+body h1 {
+  font-size: 80pt;
+  font-family: "Zen Loop", cursive;
+  font-weight: normal;
+  color: white;
+}
+body h2 {
+  font-size: 60pt;
+  font-family: "Zen Loop", cursive;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+body p {
+  font-size: 14pt;
+  color: var(--white-color);
+}
+body .logo {
+  width: 100pt;
+}
+body .logo-footer {
+  width: 38pt;
+}
+body .hidden-title {
+  display: none;
+}
+
+:root {
+  --white-color: #FFFFFF;
+  --light-green-color: #839B97;
+  --green-color: #34626C;
+  --black-color: #000000;
+  --beige-color: #C6B497;
+  --leight-grey-color: #CFD3CE;
+  --footer-color: #2A4F57;
+}
+
+@media screen and (max-width: 727px) {
+  .hero {
+    height: 90vh;
+    background-image: linear-gradient(rgba(9, 44, 16, 0.5), rgba(10, 16, 12, 0.5)), url(../Gittes_Glamping_Assets/stays/weekend.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero .mobile-container {
+    margin: auto;
+    color: var(--black-color);
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+  }
+  .hero .mobile-container .topnav {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero .mobile-container .topnav .mobile-logo, .hero .mobile-container .topnav .nav-logo {
+    display: flex;
+    align-items: center;
+    width: 45pt;
+    height: 45pt;
+  }
+  .hero .mobile-container .topnav #myLinks {
+    height: 100vh;
+    display: none;
+    text-align: center;
+    padding: 70pt 30pt;
+    background-color: var(--light-green-color);
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .hero .mobile-container .topnav a {
+    color: white;
+    font-family: "Zen Loop", cursive;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 30pt;
+    font-weight: normal;
+    display: block;
+    margin: 0;
+  }
+  .hero .mobile-container .fa-bars {
+    font-size: 30px;
+    color: var(--white-color);
+    background-color: var(--light-green-color);
+    padding: 20px;
+    border-radius: 25% 0 25% 0;
+  }
+  .hero .mobile-container .close-icon {
+    cursor: pointer;
+    font-size: 30pt;
+    color: var(--white-color);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .hero .apartment-title, .hero .activities-title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+@media screen and (min-width: 728px) {
+  .hero {
+    height: 90vh;
+    background-image: linear-gradient(rgba(55, 91, 62, 0.5), rgba(98, 128, 110, 0.5)), url(../Gittes_Glamping_Assets/stays/weekend.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero .mobile-container {
+    position: relative;
+    margin: auto;
+  }
+  .hero .mobile-container .nav-logo {
+    width: 50pt;
+    background-color: var(--light-green-color);
+    border-radius: 5pt;
+  }
+  .hero .mobile-container .nav-logo:hover {
+    background-color: var(--green-color);
+  }
+  .hero .mobile-container .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    padding-bottom: 0;
+    border-radius: 0;
+    z-index: 9999;
+  }
+  .hero .mobile-container .topnav #myLinks {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero .mobile-container .topnav a {
+    color: black;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 30pt;
+    font-weight: bold;
+    display: block;
+    font-family: "Zen Loop", cursive;
+    transition: font-size 0.3s;
+  }
+  .hero .mobile-container .topnav a:hover {
+    color: var(--green-color);
+    font-size: 35pt;
+  }
+  .hero .mobile-container .topnav a.icon {
+    display: none;
+  }
+  .hero .mobile-container .fa-cart-shopping {
+    margin-right: 0;
+  }
+  .hero .apartment-title, .hero .activities-title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .hero .close-icon {
+    display: none;
+  }
+}
+.weekend-stay, .romantic-stay, .family-stay {
+  background-color: var(--green-color);
+  border-radius: 66pt 0 0 0;
+  margin-top: -130pt;
+  color: white;
+}
+.weekend-stay .weekendstay-item, .romantic-stay .weekendstay-item, .family-stay .weekendstay-item {
+  padding: 83pt 24pt;
+}
+.weekend-stay .weekend-second-title, .romantic-stay .weekend-second-title, .family-stay .weekend-second-title {
+  font-size: 60pt;
+  font-family: "Zen Loop", cursive;
+  margin-bottom: 37pt;
+}
+.weekend-stay .weekend-text, .weekend-stay .weekend-third-title, .weekend-stay .weekend-small-text, .romantic-stay .weekend-text, .romantic-stay .weekend-third-title, .romantic-stay .weekend-small-text, .family-stay .weekend-text, .family-stay .weekend-third-title, .family-stay .weekend-small-text {
+  font-size: 14pt;
+  text-align: center;
+  font-family: "NanumGothic", sans-serif;
+  font-weight: 400;
+  margin-bottom: 37pt;
+}
+.weekend-stay .weekend-small-text, .romantic-stay .weekend-small-text, .family-stay .weekend-small-text {
+  margin-bottom: 5pt;
+}
+.weekend-stay .weekendstay-price, .romantic-stay .weekendstay-price, .family-stay .weekendstay-price {
+  font-size: 30pt;
+  font-family: "Zen Loop", cursive;
+  margin: 29pt 0;
+  text-align: center;
+}
+.weekend-stay .book-now, .romantic-stay .book-now, .family-stay .book-now {
+  font-family: "Zen Loop", cursive;
+  width: 209px;
+  color: var(--white-color);
+  font-size: 30pt;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 66pt 0;
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+}
+.weekend-stay .book-now:hover, .romantic-stay .book-now:hover, .family-stay .book-now:hover {
+  background-color: var(--light-green-color);
+  color: var(--leight-grey-color);
+  border: 1px solid white;
+}
+
+.btn-hero {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Zen Loop", cursive;
+  width: 245px;
+  color: var(--white-color);
+  font-size: 40px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 66pt 0 66pt 0;
+  display: block;
+  padding: 30px;
+}
+.btn-hero:hover {
+  background-color: inherit;
+  color: var(--leight-grey-color);
+  border: 1px solid white;
+}
+
+.read-more {
+  margin: auto;
+  text-align: center;
+  font-family: "Zen Loop", cursive;
+  width: 158pt;
+  color: var(--white-color);
+  font-size: 30pt;
+  text-align: center;
+  border-radius: 25pt 0;
+  display: block;
+  padding: 10pt;
+  background-color: var(--light-green-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.read-more:hover {
+  background-color: var(--footer-color);
+  color: var(--leight-grey-color);
+  border: 1px solid white;
+}
+
+.btn-hero-cart {
+  font-family: "Zen Loop", cursive;
+  color: var(--white-color);
+  font-size: 10pt;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5pt 0;
+  display: block;
+  padding: 5pt;
+  margin-bottom: 10pt;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-hero-cart::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--green-color);
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transform: scale(0);
+  transform-origin: center center;
+  border-radius: inherit;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+.btn-hero-cart:hover::before {
+  opacity: 0;
+  transform: scale(1);
+}
+
+.btn-hero-green {
+  font-family: "Zen Loop", cursive;
+  width: 70%;
+  color: var(--white-color);
+  font-size: 30pt;
+  margin: 0 auto;
+  padding: 20pt 5pt;
+  text-align: center;
+  border-radius: 44pt 0;
+  display: block;
+  background-color: var(--light-green-color);
+}
+.btn-hero-green:hover {
+  background-color: inherit;
+  color: var(--leight-grey-color);
+  border: 1px solid white;
+}
+
+.btn-contact-green {
+  margin: 41pt auto 0;
+  text-align: center;
+  font-family: "Zen Loop", cursive;
+  width: 245px;
+  color: var(--white-color);
+  font-size: 40px;
+  text-align: center;
+  border-radius: 44pt 0;
+  border: none;
+  display: block;
+  padding: 30px;
+  background-color: var(--light-green-color);
+}
+.btn-contact-green:hover {
+  background-color: inherit;
+  color: var(--leight-grey-color);
+  border: 1px solid white;
+}
+
+.btn-success {
+  margin: 41pt auto 0;
+  font-family: "Zen Loop", cursive;
+  width: 245px;
+  color: var(--white-color);
+  font-size: 20pt;
+  text-align: center;
+  border-radius: 66pt 0 66pt 0;
+  display: block;
+  padding: 10pt;
+  background-color: var(--light-green-color);
+}
+.btn-success:hover {
+  background-color: inherit;
+  color: var(--leight-grey-color);
+  border: 1px solid white;
+}
+
+.white-heart {
+  color: white;
+}
+
+@media screen and (min-width: 728px) {
+  .btn-hero-green {
+    font-family: "Zen Loop", cursive;
+    width: 33%;
+    padding: 30pt 0;
+    color: var(--white-color);
+    font-size: 30pt;
+    text-align: center;
+    border-radius: 44pt 0;
+    display: block;
+    background-color: var(--light-green-color);
+  }
+  .btn-hero-green:hover {
+    background-color: inherit;
+    color: var(--leight-grey-color);
+    border: 1px solid white;
+  }
+  .read-more {
+    margin: auto;
+    text-align: center;
+    font-family: "Zen Loop", cursive;
+    width: 150px;
+    color: var(--white-color);
+    font-size: 20pt;
+    text-align: center;
+    border-radius: 15pt 0;
+    display: block;
+    padding: 10pt;
+    background-color: var(--light-green-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .read-more:hover {
+    background-color: var(--footer-color);
+    color: var(--leight-grey-color);
+  }
+}
+footer {
+  background-color: var(--footer-color);
+  padding: 76pt 30pt;
+}
+footer .footer-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10pt;
+  margin-bottom: 40pt;
+}
+footer .footer-social-links .fa-square-facebook {
+  color: var(--white-color);
+  font-size: 39pt;
+}
+footer .footer-social-links .fa-instagram {
+  color: var(--green-color);
+  background-color: white;
+  width: 34pt;
+  height: 34pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30pt;
+  border-radius: 4pt;
+}
+footer .footer-social-links .fa-square-facebook:hover, footer .footer-social-links .fa-instagram:hover {
+  color: var(--black-color);
+}
+footer .footer-tekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10pt;
+}
+footer .footer-tekst .footer-name {
+  font-family: "Zen Loop", cursive;
+  font-size: 30pt;
+}/*# sourceMappingURL=weekendtur.css.map */

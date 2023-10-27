@@ -1,0 +1,48 @@
+.administrator {
+    background-color: var(--light-green-color);
+    padding: 10pt;
+} 
+
+
+.administrator-title {
+    text-align: center;
+    margin: 0 0 20pt 0; 
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages {
+    margin-top: 20pt;
+}
+
+.message-item {
+    background-color: var(--green-color);
+    padding: 30pt;
+    border: 1px solid white;
+}
+
+
+.filter-button {
+
+font-family: "Zen Loop", cursive;
+width: 70%;
+color: var(--white-color);
+font-size: 30pt;
+margin: 0 auto;
+padding: 20pt 5pt;
+text-align: center;
+border-radius: 44pt 0;
+display: block; 
+background-color: var(--green-color);
+
+
+&:hover {
+  background-color: inherit;
+  color: var(--leight-grey-color);
+  border: 1px solid white;
+}
+} 

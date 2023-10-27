@@ -1,0 +1,217 @@
+.btn-hero {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    font-family: 'Zen Loop', cursive;
+    width: 245px;
+    color: var(--white-color);
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 66pt 0 66pt 0;
+    display: block;
+    padding: 30px;
+    
+
+    &:hover {
+      background-color: inherit;
+      color: var(--leight-grey-color);
+      border: 1px solid white;
+    } 
+  } 
+  
+  .read-more {
+    margin: auto;
+    text-align: center;
+    font-family: 'Zen Loop', cursive; 
+    width: 158pt;
+    color: var(--white-color);
+    font-size: 30pt;
+    text-align: center;
+    border-radius: 25pt 0 ;
+    display: block;
+    padding: 10pt;
+    background-color: var( --light-green-color);
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%); 
+    
+
+    &:hover {
+      background-color: var(--footer-color);
+      color: var(--leight-grey-color);
+      border: 1px solid white;
+    }
+    }
+
+  .btn-hero-cart {
+    font-family: 'Zen Loop', cursive;
+    color: var(--white-color);
+    font-size: 10pt;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5pt 0; 
+    display: block;
+    padding: 5pt;
+    margin-bottom: 10pt;
+    position: relative; 
+    overflow: hidden; 
+  }
+
+
+  .btn-hero-cart::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--green-color);
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1; 
+    transform: scale(0);
+    transform-origin: center center;
+    border-radius: inherit;
+    animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+      opacity: 1;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 0;
+      transform: scale(1.2);
+  }
+}
+
+.btn-hero-cart:hover::before {
+  opacity: 0; 
+  transform: scale(1);
+}
+
+  .btn-hero-green {
+    font-family: "Zen Loop", cursive;
+    width: 70%;
+    color: var(--white-color);
+    font-size: 30pt;
+    margin: 0 auto;
+    padding: 20pt 5pt;
+    text-align: center;
+    border-radius: 44pt 0;
+    display: block; 
+    background-color: var(--light-green-color);
+    
+
+    &:hover {
+      background-color: inherit;
+      color: var(--leight-grey-color);
+      border: 1px solid white;
+    }
+  } 
+
+  .btn-contact-green {
+    margin: 41pt auto 0;
+    text-align: center;
+    font-family: 'Zen Loop', cursive;
+    width: 245px;
+    color: var(--white-color);
+    font-size: 40px;
+    text-align: center;
+    border-radius: 44pt 0;
+    border: none;
+    display: block;
+    padding: 30px;
+    background-color: var( --light-green-color);
+    
+    
+
+    &:hover {
+      background-color: inherit;
+        color: var(--leight-grey-color);
+        border: 1px solid white;
+    }
+  } 
+
+  .btn-success {
+    margin: 41pt auto 0;
+    font-family: 'Zen Loop', cursive;
+    width: 245px;
+    color: var(--white-color);
+    font-size: 20pt;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    display: block;
+    padding:10pt;
+    background-color: var( --light-green-color);
+  
+    &:hover {
+      background-color: inherit;
+        color: var(--leight-grey-color);
+        border: 1px solid white;
+    }
+    
+  }
+
+
+.white-heart {
+  color: white;  
+}
+
+  // TABLET AND DESCTOP DESIGN
+
+  @media screen  and (min-width:728px){
+    .btn-hero-green { 
+      font-family: "Zen Loop", cursive;
+      width: 33%;
+      padding: 30pt 0;
+      color: var(--white-color);
+      font-size: 30pt;
+      text-align: center;
+      border-radius: 44pt 0;
+      display: block;
+      background-color: var(--light-green-color);
+      
+  
+      &:hover {
+        background-color: inherit;
+        color: var(--leight-grey-color);
+        border: 1px solid white;
+      }
+    }  
+    
+
+    .read-more {
+      margin: auto;
+      text-align: center;
+      font-family: 'Zen Loop', cursive; 
+      width: 150px;
+      color: var(--white-color);
+      font-size: 20pt;
+      text-align: center;
+      border-radius: 15pt 0 ;
+      display: block;
+      padding: 10pt;
+      background-color: var( --light-green-color);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); 
+      
+  
+      &:hover {
+        background-color: var(--footer-color);
+        color: var(--leight-grey-color);
+      }
+      }
+}  
+
+
+ 
+
+  

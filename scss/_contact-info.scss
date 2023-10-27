@@ -1,0 +1,24 @@
+.contact-info  {
+    background-color: var(--green-color);
+    margin-top: -80pt;
+    position: relative;
+    padding: 120pt 30pt 30pt;
+    text-align: center;
+    border-radius: 66pt 0 0 0;
+    position: relative;
+    z-index: 3;   
+}
+
+
+.contact-info-title {
+    font-size: $h2-font-size;
+      font-family: 'Zen Loop', cursive; 
+      text-align: center;
+      color: white;
+      font-weight: normal;
+      margin-bottom: 43pt;
+    }
+
+    .kinds-small-tekst {
+        text-align: center;
+    } 

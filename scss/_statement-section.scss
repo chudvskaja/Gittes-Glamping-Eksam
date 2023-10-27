@@ -1,0 +1,237 @@
+// MOBILE DESIGN //
+
+@media screen and (max-width: 727px) {
+.statement-section {
+    background-color: var(--leight-grey-color);
+    margin-top: -80pt;
+    position: relative;
+    z-index: 1; 
+    padding: 130pt 10pt 30pt; 
+    text-align: center;
+}
+
+.statement-title-container {
+    width: 90%;
+    border-radius: 66pt 0 66pt 0;
+    margin: auto;
+    background-color: var(--beige-color);
+    padding: 30pt 20pt;
+    margin-bottom: 84pt;
+
+
+.statement-title {
+    font-size: $h2-font-size;
+      font-family: 'Zen Loop', cursive; 
+      text-align: center;
+      color: white;
+      font-weight: normal;
+    }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      .blinking-text {
+        animation: blink 3s infinite;
+      }
+}
+    
+    .statement-list {
+        font-size: $h2-font-size;
+        font-family: 'Zen Loop', cursive; 
+        text-align: center;
+        color: white;
+
+        .statement-item {
+            width: 90%;
+            border-radius: 66pt 0 66pt 0;
+            margin: 0 auto;
+            background-color: var(--light-green-color);
+            padding: 30pt 20pt;
+
+            &:not(:last-child) {
+              margin-bottom: 74pt;
+          }
+
+            .client-name, .client-stay, .client-age {
+            font-size: 30pt;
+            }
+
+            .client-info {
+                display: flex; 
+                justify-content: center;
+               align-items: center;
+               gap: 10pt;
+            } 
+
+            .statement-text {
+                margin-top: 16pt;
+            } 
+        }
+    }    
+}
+
+// TABLET DESIGN //
+
+    @media screen and (min-width: 728px) and (max-width: 1023px) {
+
+        .statement-section {
+            background-color: var(--leight-grey-color);
+            margin-top: -80pt;
+            position: relative;
+            z-index: 1;
+            padding: 130pt 10pt 50pt;
+            text-align: center;
+        }
+
+        .statement-title-container {
+            width: 90%;
+            border-radius: 66pt 0 66pt 0;
+            margin: auto;
+            background-color: var(--beige-color);
+            padding: 30pt 20pt;
+            margin-bottom: 84pt;
+        
+        .statement-title {
+            font-size: $h2-font-size;
+              font-family: 'Zen Loop', cursive; 
+              text-align: center;
+              color: white;
+              font-weight: normal; 
+              animation: fadeIn 1s ease-out;  
+            } 
+
+            @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                  transform: translateY(20px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }    
+        }
+
+        .statement-list {
+        font-size: 40pt;
+        font-family: 'Zen Loop', cursive; 
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      
+        .statement-item {
+          width: 48%; 
+          margin: 0 0 32pt;
+          border-radius: 66pt 0 66pt 0;
+          background-color: var(--light-green-color);
+          padding: 50pt 20pt;
+
+          .client-name, .client-stay, .client-age {
+            font-size: 30pt;
+            }
+
+            .client-info {
+                display: flex; 
+                justify-content: center;
+               align-items: center;
+               gap: 10pt;
+            } 
+
+            .statement-text {
+                margin-top: 16pt;
+                font-size: 20pt;
+            } 
+        } 
+      }
+    }
+
+      // DESCTOP DESIGN //
+
+    @media screen and (min-width: 1024px)  {
+
+      .statement-section {
+          background-color: var(--leight-grey-color);
+          margin-top: -80pt;
+          position: relative;
+          z-index: 1;
+          padding: 130pt 10pt 50pt;
+          text-align: center;
+      }
+
+      .statement-title-container {
+          width: 90%;
+          border-radius: 66pt 0 66pt 0;
+          margin: auto;
+          background-color: var(--beige-color);
+          padding: 30pt 20pt;
+          margin-bottom: 84pt;
+      
+      .statement-title {
+          font-size: $h2-font-size;
+            font-family: 'Zen Loop', cursive; 
+            text-align: center;
+            color: white;
+            font-weight: normal; 
+            animation: fadeIn 1s ease-out;  
+          } 
+
+          @keyframes fadeIn { 
+              from {
+                opacity: 0;
+                transform: translateY(20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateY(0);
+              }
+            }
+            
+      }
+
+      .statement-list {
+      font-size: 20pt;
+      font-family: 'Zen Loop', cursive; 
+      text-align: center;
+      color: white;
+      display: flex;
+      gap: 10pt;
+      justify-content: space-between;
+    
+      .statement-item {
+        width: 25%; 
+        border-radius: 66pt 0 66pt 0;
+        background-color: var(--light-green-color);
+        padding: 10pt 10pt;
+
+
+          .client-info {
+              display: flex; 
+              justify-content: center;
+             align-items: center;
+             gap: 10pt;
+             
+             
+             .client-name, .client-age {
+              color: var(--footer-color);
+              font-weight: bold;
+             }
+          } 
+
+          .statement-text {
+              margin-top: 20pt; 
+          }  
+      } 
+    }
+  }     
+  

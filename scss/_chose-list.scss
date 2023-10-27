@@ -1,0 +1,435 @@
+.activities-info  {
+  background-color: var(--green-color);
+  margin-top: -80pt;
+  position: relative;
+  padding: 50pt 10pt;
+  text-align: center;
+  border-radius: 66pt 0 66pt 0;
+  position: relative;
+  z-index: 4;    
+}
+
+.kinds-of-activities {
+  background-color: var(--leight-grey-color);
+  position: relative;
+  margin-top: -60pt;
+  z-index: 2;
+  padding: 80pt 0 15pt;
+}
+
+
+.activity-info {
+background-color: var(--green-color);
+padding: 34pt;
+text-align: center;
+border-radius: 66pt 0 66pt 0;
+margin-top: -50pt;
+position: relative; 
+}
+
+.activity-date, .activity-hours {
+   font-size: 30pt;
+   text-align: start;   
+} 
+
+
+.my-list-container {
+    font-size: $h2-font-size;
+    font-family: 'Zen Loop', cursive; 
+    text-align: center;
+    color: white;
+
+    .activity-item { 
+        margin: 90pt auto;
+        width: 100%;
+        position: relative; 
+
+        &:not(:last-child) {
+            margin-bottom: 50pt;
+        } 
+    }
+
+    .kinds-small-tekst {
+        text-align: center;
+    }
+
+.activity-title-containter {
+    width: 90%; 
+    border-radius: 66pt 0 66pt 0;
+    margin: 0 auto 74pt;
+    background-color: var(--beige-color);
+    padding: 26pt;
+    position: absolute;
+    top: -10%;
+    left: 5%;
+
+    .activity-title  {
+    font-size: 30pt; 
+    }
+}
+
+.activity-image {
+    width: 100%;
+}
+
+
+.read-more {
+    margin: auto;
+    text-align: center;
+    font-family: 'Zen Loop', cursive; 
+    width: 245px;
+    color: var(--white-color);
+    font-size: 40px;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    display: block;
+    padding: 10pt;
+    background-color: var( --light-green-color);
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    
+
+    &:hover {
+      background-color: var(--beige-color);
+      color: var(--leight-grey-color);
+    }
+    }
+
+
+    .activity-info {
+      background-color: var(--green-color);
+      padding: 34pt;
+      text-align: center;
+      border-radius: 66pt 0 66pt 0;
+      margin-top: -50pt;
+      position: relative;
+      }
+  
+  
+      .activity-date, .activity-hours {
+         font-size: 30pt;
+         text-align: start;   
+      } 
+
+  
+ 
+     .activity-flex {
+         display: flex;
+         justify-content: space-between;
+         gap: 10pt;
+         align-items: flex-start;
+         text-align: start;
+         margin-bottom: 20pt;
+     }
+
+    .accordion-header {
+        cursor: pointer;
+        padding: 10px;
+        background-color: var( --green-color);
+        border: 1px solid white;
+        border-radius: 30pt 0 30pt 0;
+        font-size: 30pt;
+    }
+    
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+          }
+    
+    .accordion-text {
+        margin-top: 5pt;
+        color: white;
+      }
+
+      
+      .accordion-content.show {
+        display: block;
+      }     
+}
+
+
+@media screen and (min-width:728px) and (max-width: 1023px) {
+
+  .activities-info  {
+    background-color: var(--green-color);
+    margin-top: -80pt;
+    position: relative;
+    padding: 50pt 10pt;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    position: relative;
+    z-index: 4;    
+}
+
+  .kinds-of-activities {
+    background-color: var(--leight-grey-color);
+    position: relative;
+    margin-top: -60pt;
+    z-index: 2;
+    padding: 80pt 0 15pt;
+}
+
+
+.activity-info {
+  background-color: var(--green-color);
+  padding: 34pt;
+  text-align: center;
+  border-radius: 66pt 0 66pt 0;
+  margin-top: -50pt;
+  position: relative; 
+  }
+
+.activity-date, .activity-hours {
+     font-size: 30pt;
+     text-align: start;   
+  } 
+
+.my-list-container {
+    font-size: 20pt;
+    font-family: 'Zen Loop', cursive; 
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60pt;
+
+    .activity-item {
+        margin: 0 auto;
+        width: calc(45% - 30px); 
+        position: relative;
+        box-sizing: border-box; 
+        padding: 5px; 
+        
+        &:not(:last-child) {
+            margin-bottom: 50pt;
+        } 
+    }
+
+    .activity-title-containter {
+        width: 90%;
+        border-radius: 66pt 0 66pt 0;
+        margin: 0 auto 74pt;
+        background-color: var(--beige-color);
+        padding: 26pt;
+        position: absolute;  
+        top: -10%;
+        left: 5%;
+
+      .activity-title {
+        font-size: 30pt;
+      } 
+
+    }
+
+    .activity-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .chosen-text {
+      margin-bottom: 50pt;
+    }
+  
+
+    .read-more {
+    margin: auto;
+    text-align: center;
+    font-family: 'Zen Loop', cursive; 
+    width: 150px;
+    color: var(--white-color);
+    font-size: 20pt;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    display: block;
+    padding: 20pt;
+    background-color: var( --light-green-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    &:hover {
+      background-color: var(--beige-color);
+      color: var(--leight-grey-color);
+    }
+    }
+} 
+
+// Accordion styles //
+
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var( --green-color);
+    border: 1px solid white;
+    border-radius: 30pt 0 30pt 0;
+    font-size: 30pt;
+}
+
+.accordion-content {
+    margin-top: 10pt;
+    max-height: 0;
+    overflow: hidden;
+    display: none;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.show {
+    display: block;
+  }
+
+.accordion-text {
+  margin-top: 5pt ;
+    color: white;
+  }
+}
+
+// DESCTOP DESIGN //
+
+@media screen and (min-width:1024px) {
+
+.activities-info  {
+    background-color: var(--green-color);
+    margin-top: -80pt;
+    position: relative;
+    padding: 50pt 10pt;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    position: relative;
+    z-index: 4;   
+}
+
+  .kinds-of-activities {
+    background-color: var(--leight-grey-color);
+    position: relative;
+    margin-top: -60pt;
+    z-index: 2;
+    padding: 80pt 0 15pt;
+}
+
+
+.activity-info {
+  background-color: var(--green-color);
+  padding: 24pt;
+  text-align: center;
+  border-radius: 66pt 0 66pt 0;
+  margin-top: -50pt;
+  position: relative; 
+  }
+
+// MY list styles + item //
+
+.my-list-container {
+    font-size: 20pt;
+    font-family: 'Zen Loop', cursive; 
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60pt;
+
+
+//  activity item style //
+
+
+    .activity-item {
+        margin: 0 auto;
+        width: calc(33% - 30px); 
+        position: relative;
+        box-sizing: border-box; 
+        padding: 5px; 
+        
+        &:not(:last-child) {
+            margin-bottom: 50pt;
+        } 
+    }
+
+    .activity-title-containter {
+        width: 90%;
+        border-radius: 66pt 0 66pt 0;
+        margin: 0 auto 74pt;
+        background-color: var(--beige-color);
+        padding: 26pt;
+        position: absolute;  
+        top: -10%;
+        left: 5%;
+
+      .activity-title {
+        font-size: 60pt;
+      } 
+    }
+
+    .activity-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .activity-date, .activity-hours {
+      font-size: 18pt;
+      text-align: start;    
+   } 
+
+
+   .chosen-text {
+    margin-bottom: 50pt;
+  }
+
+
+    .read-more {
+    margin: auto;
+    text-align: center;
+    font-family: 'Zen Loop', cursive; 
+    width: 150px;
+    color: var(--white-color);
+    font-size: 20pt;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    display: block;
+    padding: 20pt;
+    background-color: var( --light-green-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    &:hover {
+      background-color: var(--beige-color);
+      color: var(--leight-grey-color);
+    }
+    }
+}  
+
+
+
+// Accodrion style // 
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var( --green-color);
+    border: 1px solid white;
+    border-radius: 30pt 0 30pt 0;
+    font-size: 30pt;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+
+.accordion-content.show {
+    display: block;
+  }
+
+
+.accordion-text {
+    margin-top: 5pt ;
+    color: white;
+    font-size: 16px;
+  } 
+} 

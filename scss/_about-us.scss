@@ -1,0 +1,56 @@
+.about-us {
+    background-color: var(--green-color);
+    border-radius: 70pt 0 70pt 0;
+    margin-top: -60pt;
+    padding: 50pt 10pt;
+    position: relative;
+    z-index: 2;
+    text-align: center; 
+
+    &-img {
+        width: 173pt; 
+        height: 173pt; 
+        margin: 0 auto 62pt;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background-color: #f5f5f5; 
+
+        .gitte {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        }
+    } 
+
+    .about-small-tekst {
+        margin: 20pt 0;
+    }
+}  
+
+// TABLET AND DESCTOP DESIGN
+
+@media screen  and (min-width:728px){
+    .desktop-gitte {
+        display: flex;
+        justify-content: center;
+        gap: 20pt;
+        align-items: center;
+    }
+
+
+    .about-us-img {
+        width: 40%;
+        height: 40%;
+        margin-left: 20pt;
+        border-radius: 66pt 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+}
+
+}

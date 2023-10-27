@@ -1,0 +1,55 @@
+.weekend-stay, .romantic-stay, .family-stay {
+    background-color: var(--green-color);
+    border-radius: 66pt 0 0 0;
+    margin-top: -130pt;
+    color: white;
+
+.weekendstay-item {
+    padding: 83pt 24pt;
+} 
+
+    .weekend-second-title {
+        font-size: 60pt;
+        font-family: 'Zen Loop', cursive;
+        margin-bottom: 37pt;
+    }
+
+    .weekend-text, .weekend-third-title, .weekend-small-text{
+        font-size: 14pt;
+        text-align: center;
+        font-family: 'NanumGothic', sans-serif;
+        font-weight: 400;
+        margin-bottom: 37pt;
+    }
+
+    .weekend-small-text {
+        margin-bottom: 5pt;
+    }
+
+    .weekendstay-price {
+        font-size: 30pt;
+        font-family: 'Zen Loop', cursive;
+        margin: 29pt 0;
+        text-align: center;
+    }
+
+    .book-now {
+        font-family: 'Zen Loop', cursive;
+        width: 209px;
+        color: var(--white-color);
+        font-size: 30pt;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 66pt 0;
+        display: block;
+        padding: 30px;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: var(--light-green-color);
+            color: var(--leight-grey-color);
+            border: 1px solid white;
+          }
+}
+
+}

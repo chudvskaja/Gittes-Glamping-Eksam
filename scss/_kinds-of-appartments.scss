@@ -1,0 +1,195 @@
+// MOBILE DESIGN //
+
+@media screen and (max-width:727px) {
+
+.kinds-of-appartment {
+    background-color: var(--leight-grey-color);
+    position: relative;
+    z-index: 1;
+    padding: 30pt 0;
+}
+
+.green-background {
+    background-color: var(--leight-grey-color);
+    height: 200px; 
+    margin: -100pt 0 -90pt 0;
+}
+
+.appartments-list {
+    font-size: $h2-font-size;
+    font-family: 'Zen Loop', cursive; 
+    text-align: center;
+    color: white;
+
+    .appartment-item {
+        margin: 90pt auto;
+        width: 100%;
+        position: relative;
+    }
+
+    .appartment-info {
+        width: 90%;
+        border-radius: 30pt 0;
+        margin: 0 auto 74pt;
+        background-color: var(--beige-color);
+        padding: 10pt;
+        position: absolute;
+        top: -10%;
+        left: 5%;
+
+        .appartment-title, .appartment-description, .appartment-price {
+        font-size: 30pt; 
+        }
+    }
+
+   
+    .appartment-image {
+        width: 100%;
+    }
+
+
+    .appartment-overlay {
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        width: 98%;
+        height: 95%; 
+        background: rgba(0, 0, 0, 0.5); 
+      }
+}
+}
+
+
+// TABLET DESIGN //
+
+@media screen and (min-width:728px) and (max-width:1023px) {
+    .kinds-of-appartment {
+    background-color: var(--leight-grey-color);
+    position: relative;
+    z-index: 1;
+    padding: 90pt 0;
+}
+
+.green-background {
+    background-color: var(--leight-grey-color);
+    height: 200px; 
+    margin: -100pt 0 -90pt 0;
+    position: relative;
+    z-index: 1;
+}
+
+.appartments-list {
+    font-size: 20pt;
+    font-family: 'Zen Loop', cursive; 
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+    .appartment-item {
+        margin: 0 auto;
+        width: calc(33% - 30px); 
+        position: relative;
+        box-sizing: border-box; 
+        padding: 5px; 
+    }
+
+    .appartment-info {
+        width: 90%;
+        border-radius: 30pt 0;
+        margin: 0 auto 74pt;
+        background-color: var(--beige-color);
+        padding: 10pt;
+        position: absolute;
+        top: -10%;
+        left: 5%;
+
+        .appartment-title, .appartment-description, .appartment-price {
+        font-size: 20pt;  
+        }
+    }
+
+    .appartment-image {
+        width: 100%;
+        height: 200px;
+    }
+
+
+    .appartment-overlay {
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        width: 98%;
+        height: 95%;
+        background: rgba(0, 0, 0, 0.5); 
+      }
+
+
+} 
+}
+
+
+// DESCTOP DESIGN //
+
+@media screen and (min-width:1024px) {
+    .kinds-of-appartment {
+    background-color: var(--leight-grey-color);
+    position: relative;
+    z-index: 1;
+    padding: 90pt 0;
+}
+
+.green-background {
+    background-color: var(--leight-grey-color);
+    height: 200px; 
+    margin: -100pt 0 -90pt 0;
+    position: relative;
+    z-index: 1;
+}
+
+.appartments-list {
+    font-size: 20pt;
+    font-family: 'Zen Loop', cursive; 
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+    .appartment-item {
+        margin: 0 auto;
+        width: calc(33% - 30px); 
+        position: relative;
+        box-sizing: border-box; 
+        padding: 5px; 
+    }
+
+    .appartment-info {
+        width: 90%;
+        border-radius: 30pt 0;
+        margin: 0 auto 74pt;
+        background-color: var(--beige-color);
+        padding: 10pt;
+        position: absolute;
+        top: -10%;
+        left: 5%;
+
+        .appartment-title, .appartment-description, .appartment-price {
+        font-size: 20pt;  
+        }
+    }
+
+    .appartment-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .appartment-overlay {
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        width: 98%;
+        height: 95%;
+        background: rgba(0, 0, 0, 0.5); 
+      }
+} 
+}

@@ -1,0 +1,174 @@
+
+    // MOBILE MENU START //
+    @media screen and (max-width: 727px) { 
+
+        .hero {
+            height: 90vh; 
+            background-image: linear-gradient(rgba(9, 44, 16, 0.5), rgba(10, 16, 12, 0.5)), url(../Gittes_Glamping_Assets/stays/weekend.jpg);
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center;
+            
+       
+    .mobile-container {  
+            margin: auto;
+            color: var(--black-color);
+            width: 100%;
+            position: relative;
+            padding: 0 10px;
+           
+
+      .topnav {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+       
+       .mobile-logo, .nav-logo {
+        display: flex;
+        align-items: center;
+        width: 45pt;
+        height: 45pt;
+       }
+  
+        & #myLinks {
+          height: 100vh;
+          display: none;
+          text-align: center;
+          padding: 70pt 30pt; 
+          background-color: var( --light-green-color);
+          position: absolute;
+          z-index: 99999;
+          width: 100%;
+          left: 0;
+          top: 0; 
+    
+        }
+  
+        & a {
+          color: white;
+          font-family: 'Zen Loop', cursive; 
+          padding: 14px 0px;
+          text-decoration: none;
+          font-size: 30pt;
+          font-weight: normal;
+          display: block;
+          margin: 0;
+        }
+ 
+      } 
+    
+      .fa-bars {
+        font-size: 30px;
+        color: var(--white-color); 
+        background-color: var(--light-green-color);
+        padding: 20px;
+        border-radius: 25% 0 25% 0 ;
+      }
+
+      .close-icon {
+        cursor: pointer;
+        font-size: 30pt;
+        color: var(--white-color);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      } 
+    } 
+
+    .apartment-title, .activities-title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+      }
+}
+}
+    // MOBILE MENU FINISH //
+  
+ 
+  
+    // TABLET OG DESKTOP START //
+    @media screen and (min-width: 728px) {
+
+      .hero {
+        height: 90vh; 
+        background-image: linear-gradient(rgba(55, 91, 62, 0.5), rgba(98, 128, 110, 0.5)), url(../Gittes_Glamping_Assets/stays/weekend.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+      
+      .mobile-container {
+        position: relative;
+        margin: auto; 
+      
+  
+      .nav-logo {
+        width: 50pt;
+        background-color: var(--light-green-color);
+        border-radius: 5pt;
+
+        &:hover {
+          background-color: var(--green-color);
+        }
+      }
+
+      .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--white-color);
+        padding-bottom: 0;
+        border-radius: 0;
+        z-index: 9999;
+  
+        #myLinks {
+          display: flex;
+          background-color: #fff;
+          align-items: center;
+          justify-content: space-between;
+        }
+  
+        & a {
+          color: black;
+          padding: 14px 15px;
+          text-decoration: none;
+          font-size: 30pt;
+          font-weight: bold;
+          display: block;
+          font-family: 'Zen Loop', cursive; 
+          transition: font-size 0.3s;
+  
+          &:hover {
+            color: var(--green-color);
+            font-size: 35pt;
+          }
+        }
+  
+        & a.icon {
+          display: none;
+        }
+      }
+      .fa-cart-shopping {
+        margin-right: 0;
+      }
+    }
+
+.apartment-title, .activities-title {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+      }
+
+      
+.close-icon {
+  display: none;
+} 
+  }
+} 
+  

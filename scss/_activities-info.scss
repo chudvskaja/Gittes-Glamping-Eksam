@@ -1,0 +1,104 @@
+.activities-info  {
+    background-color: var(--green-color);
+    margin-top: -80pt;
+    position: relative;
+    padding: 50pt 10pt;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    position: relative;
+    z-index: 3;  
+}
+
+
+.activities-info-title { 
+    font-size: $h2-font-size;
+      font-family: 'Zen Loop', cursive; 
+      text-align: center;
+      color: white;
+      font-weight: normal;
+      margin-bottom: 43pt; 
+    }
+
+    .kinds-small-tekst {
+        text-align: center;
+    }
+
+    .activity-info {
+    background-color: var(--green-color);
+    padding: 34pt;
+    text-align: center;
+    border-radius: 66pt 0 66pt 0;
+    margin-top: -50pt;
+    position: relative;
+    }
+
+
+    .activity-date, .activity-hours {
+       font-size: 30pt;
+       text-align: start;   
+    } 
+
+    .activity-flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 10pt;
+        align-items: start;
+        text-align: start;
+        margin-bottom: 20pt;
+    }
+    
+    .accordion-header {
+        cursor: pointer;
+        padding: 10px;
+        background-color: var( --green-color);
+        border: 1px solid white;
+        border-radius: 30pt 0 30pt 0;
+        font-size: 30pt;
+    }
+    
+    .accordion-content {
+        margin-top: 10pt;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+
+    .accordion-text {
+        margin: 0;
+      }
+      
+      
+      .activity-image {
+        max-width: 100%;
+      }
+     
+  
+      .fa-heart {
+        font-size: 20pt;
+        color: #B9C6C4;
+        border-radius: 10pt 0 10pt 0;
+        padding: 10pt;
+        background-color: var(--light-green-color);
+      }
+
+      // TABLET DESIGN // 
+
+@media screen and (min-width:728px) and (max-width: 1023px) {
+        
+    .activity-info {
+      background-color: var(--green-color);
+      padding: 24pt;
+      text-align: center;
+      border-radius: 66pt 0 66pt 0;
+      margin-top: -50pt;
+      position: relative; 
+      }
+  
+  
+      .activity-date, .activity-hours {
+         font-size: 18pt;
+         text-align: start;
+          
+      } 
+      }

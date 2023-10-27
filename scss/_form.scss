@@ -1,0 +1,156 @@
+form {
+    text-align: center;
+    max-width: 80vw;
+    margin: 67pt auto;
+    font-family: 'Zen Loop', cursive;
+   font-weight: normal; 
+
+}
+
+.form-block {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20pt;
+    color: var(--white-color);
+    margin-bottom: 6pt;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 15pt;
+    border: 1px solid white;
+    background-color: var(--green-color); 
+    color: var(--white-color);
+}
+
+textarea {
+    height: 150px; 
+}
+
+.topic {
+  padding: 10pt;
+}
+
+
+// MoBILE DESIGN //
+
+@media screen and (max-width:727px) {
+
+.success {
+    display: none;
+  }
+
+    .success.shown {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--green-color);
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 15px;
+      font-size: 30pt;
+    }
+
+    .error-text {
+      padding: 100px;
+      text-align: center;
+    }
+  
+    .btn-success {
+      width: 320px;
+      height: 60px;
+      box-shadow: 0px 3px 6px var(--grey-color);
+      border-radius: 30px;
+      background-color: var( --light-grey-color);
+      color: var(--white-color);
+      border: none;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .success-text, .accent-text {
+      text-align: center;
+      font-size: 30pt;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  // TABLET AND DESCTOP DESIGN // 
+
+  @media screen and (min-width: 728px) and (max-width:1023px) {
+
+    form {
+        position: relative;
+        max-width: 40vw;
+    }
+
+    .success.shown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 380px;
+      height: 400px;
+      background-color: var(--beige-color); 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 15px;
+      border-radius: 66pt 0;
+  }
+  
+    
+      .success-text, .accent-text {
+        text-align: center;
+        font-size: 30pt;
+        display: block;
+        margin-bottom: 10px;
+      }
+    
+  } 
+
+
+  @media screen and (min-width: 1024px) {
+
+    form {
+        position: relative;
+        max-width: 40vw;
+    }
+
+    .success.shown {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 380px;
+      height: 667px;
+      background-color: var(--beige-color); 
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 15px;
+      border-radius: 66pt 0;
+  }
+  
+
+      .success-text, .accent-text {
+        text-align: center;
+        font-size: 40pt;
+        display: block;
+        margin-bottom: 20px;
+      }
+    
+  } 
+
+
+
