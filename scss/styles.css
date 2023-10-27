@@ -7,7 +7,6 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
   overflow-anchor: none;
-  margin: 0 30px;
 }
 body a {
   text-decoration: none;
@@ -44,6 +43,11 @@ body .hidden-title {
   display: none;
 }
 
+@media screen and (min-width: 728px) {
+  body {
+    margin: 0 30px;
+  }
+}
 :root {
   --white-color: #FFFFFF;
   --light-green-color: #839B97;
