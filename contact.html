@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Zen+Loop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./scss/contact.css">
+<link rel="icon" href="./Gittes_Glamping_Assets/fav.jpg  " type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Simulate a smartphone / tablet -->
+        <div class="hero">
+          <div class="mobile-container">
+      
+            <!-- Top Navigation Menu -->
+            <nav class="topnav">
+              <div class="mobile-logo">
+                <a href="index.html">
+                  <img src="./Gittes_Glamping_Assets/logo.png" alt="logo" class="nav-logo">
+                </a>
+              </div>
+              <div id="myLinks">
+                <a href="appartments.html">Ophold</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="activities.html">Aktiviteter</a>
+                <a href="my-list.html">Min Liste</a>
+                <span class="close-icon" onclick="closeMenu()">&times;</span>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </nav>
+          </div>
+          <h1 class="apartment-title">Kontakt Gitte</h1>
+        </div>
+      </header>
+
+       <!-- Section Info about appartments start -->
+     <section class="contact-info">
+        <div class="contact-info-title-container">
+        <h2 class="contact-info-title">Vil du booke et ophold? Eller har du blot et spørgsmål?</h2>
+        </div>
+        <p class="kinds-small-tekst">Så tøv ikke med at tage kontakt til os herunder. Vi bestræber os på at svare på henvendelser indenfor 24 timer, men op til ferier kan der være travlt, og svartiden kan derfor være op til 48 timer </p>
+       
+        <!-- FORM -->
+
+        <form>
+            <div class="form-block">
+                <label for="name">Navn</label>
+                <input type="text" id="name" name="name" required placeholder="Indtast navn">
+            </div>
+        
+            <div class="form-block">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Indtast e-mail">
+            </div>
+        
+            <div class="form-block">
+                <label for="topic">Hvad drejer henvendelsen sig om?</label>
+                <select id="topic" name="topic" class="topic">
+                    <option value="booking">Booking</option>
+                    <option value="question">Spørgsmål</option>
+                </select>
+            </div>
+        
+            <div class="form-block">
+                <label class="drop" for="message">Besked (Skriv dato’er, hvis det drejer sig om en booking):</label>
+                <textarea id="message" name="message" placeholder="Indtast besked"></textarea>
+            </div>
+        
+            <button class="btn-contact-green" type="submit">INDSEND</button>
+            <div class="success">
+            </div>
+        </form>  
+    </section>
+              
+<!-- Footer start -->
+<footer>
+    <ul class="footer-social-links">
+      <li><a class="footer-link" href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a class="footer-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
+    </ul>
+    <div class="footer-tekst">
+      <a class="footer-logo" href="index.html">
+        <img class="logo-footer" src="./Gittes_Glamping_Assets/logo.png" alt="logo">
+    </a> 
+    <p class="footer-name">Gittes Glamping</p>
+    </div>
+  </footer>
+  
+    <!-- Footer finish  -->
+<!-- JS -->
+<script src="./js/burger-menu.js"></script>
+<script src="./js/submit.js"></script>
+<script src="https://kit.fontawesome.com/47244aaa39.js" crossorigin="anonymous"></script>
+</body>
+</html> 

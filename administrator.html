@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Zen+Loop&display=swap" rel="stylesheet">
+    <title>Administratorside</title>
+    <link rel="stylesheet" href="./scss/administrator.css"> 
+</head>
+<body>
+  <div class="administrator">
+    <h1 class="administrator-title">Administratorside</h1>
+    <div class="filter-buttons">
+        <button class="filter-button" onclick="filterMessages('booking')">Filtrér 'booking'</button>
+        <button class="filter-button" onclick="filterMessages('question')">Filtrér 'spørgsmål'</button>
+        <button class="filter-button" onclick="sortByDate()">Sorter efter dato</button>
+        <button class="filter-button" onclick="showAllMessages()">Vis alt</button>
+    </div>
+    <div id="messages" class="messages"></div>
+  </div>
+    <script src="./js/administrator.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "49c90815-672b-4cd7-a727-004e2959966f",
+		"name": "MCDM - Glamping API Dokumentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17346811",
+		"_collection_link": "https://mcdmviborg.postman.co/workspace/MCDM---Team-Workspace~0c9c7c89-d8e7-46cf-836d-2b921bb49b6e/collection/17346811-49c90815-672b-4cd7-a727-004e2959966f?action=share&source=collection_link&creator=17346811"
+	},
+	"item": [
+		{
+			"name": "Activities",
+			"item": [
+				{
+					"name": "Get Activites",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/activities",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"activities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Activity By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/activity/6533b47bc6b6a8c143c4e7de",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"activity",
+								"6533b47bc6b6a8c143c4e7de"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stays",
+			"item": [
+				{
+					"name": "Get Stays",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/stays",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"stays"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Stay By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/stays/6533c19ad89bd7c9ba8de72e",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"stays",
+								"6533c19ad89bd7c9ba8de72e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Get Reviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/reviews",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"reviews"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Add Contact Information",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Anders\",\r\n    \"email\": \"mcandersc@gmail.com\",\r\n    \"message\": \"Dette er en test besked. Med 'question' som subject\",\r\n    \"subject\": \"question\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/contact",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Contacts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/contacts",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MyList - Activities",
+			"item": [
+				{
+					"name": "Save myList",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"activityIds\" : [\"6533b47bc6b6a8c143c4e7de\", \"6533b99315544b7a7013631c\"],\r\n    \"email\" : \"mcandersc@medieskolerne.dk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/mylist/save",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"mylist",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get My List By Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://glamping.webmcdm.dk/mylist/mcandersc@medieskolerne.dk",
+							"protocol": "https",
+							"host": [
+								"glamping",
+								"webmcdm",
+								"dk"
+							],
+							"path": [
+								"mylist",
+								"mcandersc@medieskolerne.dk"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

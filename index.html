@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Zen+Loop&display=swap" as="style">
+  <link rel="preload" href="./Gittes_Glamping_Assets/logo.png" as="image">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Zen+Loop&display=swap" rel="stylesheet">
+  <title>Forside</title>
+  <link rel="stylesheet" href="./scss/styles.css">
+  <link rel="icon" href="./Gittes_Glamping_Assets/fav.jpg  " type="image/x-icon"> 
+</head> 
+<body>
+    <header>
+        <!-- Simulate a smartphone / tablet -->
+        <div class="hero"> 
+         <div class="mobile-container">
+      
+         <!-- Top Navigation Menu -->
+         <nav class="topnav"> 
+          <a class="desktop-logo" href="index.html">
+            <img src="./Gittes_Glamping_Assets/logo.png" alt="logo" class="logo">
+        </a>
+           <div id="myLinks">
+             <a href="appartments.html">Ophold</a>
+             <a href="contact.html">Kontakt</a>
+             <a href="activities.html">Aktiviteter</a>
+             <a href="my-list.html">Min Liste</a>
+             <span class="close-icon" onclick="closeMenu()">&times;</span>
+           </div>
+           <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+             <i class="fa fa-bars"></i>
+           </a>
+         </nav>
+      </div>
+      <a class="mobile-logo" href="index.html">
+        <img src="./Gittes_Glamping_Assets/logo.png" alt="logo"  class="mobile-logo-hero">
+    </a> 
+    <h1 class="index-title"><span class="title-name">Gittes</span>Glamping</h1>
+    <a class="btn-hero" href="contact.html">BOOK NU</a>
+    </div> 
+     </header>
+
+     <!-- Section About Gitte start -->
+     <section class="about-us">
+<h2>Kom og prøv glamping hos Gitte!</h2>
+<p class="about-small-tekst">Vi er stolte af at byde dig velkommen til Gitte’s Glamping, hvor hjertevarme og omsorg møder naturens skønhed og eventyr. Vores dedikerede team, anført af Gitte selv, er her for at skabe den perfekte ramme om din luksuriøse udendørsoplevelse. Vi stræber efter at skabe minder og fordybelse, uanset om du besøger os som par, familie eller soloeventyrer. Vi tilbyder en bred vifte af aktiviteter og arrangementer, der passer til alle aldre og interesser. Udforsk naturen, slap af ved bålet, del historier med nye venner, eller find indre ro med vores wellnessaktiviteter. 
+</p>
+<div class="desktop-gitte">
+<div class="about-us-img">
+<img class="gitte" src="./Gittes_Glamping_Assets/gitte.jpg" alt="Gittes picture"></div>
+<a class="btn-hero-green" href="apartaments.html">SE VORES OPHOLD</a>
+</div>
+</section>
+<section class="statement-section">
+  <div class="statement-title-container">
+    <h2 class="statement-title blinking-text">Vores gæster udtaler</h2>
+  </div>
+  <div class="statement-list"></div>
+</section>
+
+     <!-- Section About Gitte finish -->
+
+     <!-- Footer start -->
+<footer>
+  <ul class="footer-social-links">
+    <li>
+      <a class="footer-link" href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+    <li>
+      <a class="footer-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+  </ul>
+  <div class="footer-tekst">
+    <a class="footer-logo" href="index.html">
+      <img class="logo-footer" src="./Gittes_Glamping_Assets/logo.png" alt="logo" >
+  </a> 
+  <p class="footer-name">Gittes Glamping</p>
+  </div>
+</footer> 
+
+  <!-- Footer finish  --> 
+
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/fetch-statements.js" type="module"></script> 
+    <script src="https://kit.fontawesome.com/47244aaa39.js" crossorigin="anonymous"></script>
+</body> 
+</html> 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Zen+Loop&display=swap" as="style">
+  <link rel="preload" href="./scss/apartaments.css" as="style">
+  <link rel="preload" href="./Gittes_Glamping_Assets/logo.png" as="image">
+  <title>Ophold</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Zen+Loop&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/apartaments.css">
+  <link rel="icon" href="./Gittes_Glamping_Assets/fav.jpg  " type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Simulate a smartphone / tablet -->
+        <div class="hero">
+          <div class="mobile-container">
+      
+            <!-- Top Navigation Menu -->
+            <nav class="topnav">
+              <div class="mobile-logo">
+                <a href="index.html">
+                  <img src="./Gittes_Glamping_Assets/logo.png" alt="logo" class="nav-logo">
+                </a>
+              </div>
+              <div id="myLinks">
+                <a href="appartments.html">Ophold</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="activities.html">Aktiviteter</a>
+                <a href="my-list.html">Min Liste</a>
+                <span class="close-icon" onclick="closeMenu()">&times;</span>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </nav>
+          </div>
+          <h1 class="apartment-title">Vores ophold</h1>
+        </div>
+      </header>
+
+       <!-- Section Info about appartments start -->
+     <section class="appartments-info">
+        <div class="appartments-info-title-container">
+        <h2 class="appartments-info-title">Vi har ophold til enhver smag</h2>
+        </div>
+        <p class="kinds-small-tekst">Vores glampingophold er skabt til at tilbyde en kombination af eventyr og afslapning. Det er den ideelle flugt fra byens støj og stress, og det perfekte sted at genoplade batterierne i en naturskøn indstilling. Book dit ophold i dag og giv dig selv lov til at fordybe dig i naturen og nyde luksus i det fri. Vi ser frem til at byde dig velkommen til en oplevelse fyldt med komfort, eventyr og skønhed.
+        </p>
+        </section>
+             <!-- Section Info about  appartments finish -->
+             <div class="green-background"></div>
+             <section class="kinds-of-appartment">
+              <h2 class="hidden-title">Kinds of appartments</h2>
+                <div class="appartments-list"></div>
+              </section>
+              
+<!-- Footer start --> 
+<footer>
+    <ul class="footer-social-links">
+      <li><a class="footer-link" href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a class="footer-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
+    </ul>
+    <div class="footer-tekst">
+      <a class="footer-logo" href="index.html">
+        <img class="logo-footer" src="./Gittes_Glamping_Assets/logo.png" alt="logo">
+    </a> 
+    <p class="footer-name">Gittes Glamping</p>
+    </div>
+  </footer>
+  
+    <!-- Footer finish  -->
+<!-- JS -->
+<script src="./js/burger-menu.js"></script>
+<script src="./js/fetch-kinds-of-appartments.js"></script> 
+<script src="https://kit.fontawesome.com/47244aaa39.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Min liste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Zen+Loop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./scss/my-list.css"> 
+<link rel="icon" href="./Gittes_Glamping_Assets/fav.jpg  " type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Simulate a smartphone / tablet -->
+        <div class="hero hero-list">
+          <div class="mobile-container">
+      
+            <!-- Top Navigation Menu -->
+            <nav class="topnav">
+              <div class="mobile-logo">
+                <a href="index.html">
+                  <img src="./Gittes_Glamping_Assets/logo.png" alt="logo" class="nav-logo">
+                </a>
+              </div>
+              <div id="myLinks">
+                <a href="appartments.html">Ophold</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="activities.html">Aktiviteter</a>
+                <a href="">Min Liste</a>
+                <span class="close-icon" onclick="closeMenu()">&times;</span>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </nav>
+          </div>
+          <h1 class="my-list-title">Min liste</h1>
+        </div>
+      </header>
+     
+       <!-- Section Info about appartments start -->
+     <section class="activities-info">
+        <div>
+        <h2 class="activities-info-title">Antal aktiviteter tilføjet:</h2>
+        </div>
+        <p class="kinds-small-tekst chosen-text">Herunder kan du se listen over de aktiviteter som du har føjet til din liste</p>
+     </section>
+        <section class="kinds-of-activities">
+          <h2 class="hidden-title">Kinds of activitiest</h2>
+        <div class="my-list-container"></div>
+        </section>
+              
+<!-- Footer start -->
+<footer>
+    <ul class="footer-social-links">
+      <li><a class="footer-link" href="facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+      <li><a class="footer-link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li> 
+    </ul>
+    <div class="footer-tekst">
+      <a class="footer-logo" href="index.html">
+        <img class="logo-footer" src="./Gittes_Glamping_Assets/logo.png" alt="logo">
+    </a> 
+    <p class="footer-name">Gittes Glamping</p>
+    </div>
+  </footer>
+  
+    <!-- Footer finish  -->
+<!-- JS -->
+<script src="./js/burger-menu.js"></script>
+<script src="./js/my-list.js"></script>
+<script src="https://kit.fontawesome.com/47244aaa39.js" crossorigin="anonymous"></script>
+</body> 
+</html> 
